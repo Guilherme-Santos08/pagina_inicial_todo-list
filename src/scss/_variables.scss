@@ -1,0 +1,26 @@
+$white: #fff;
+
+$background: #141414;
+$backgroundSecondary: #1f1f1f;
+$backgroundThird: #023e8a;
+
+@mixin flexItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin globalLimit {
+  
+}
+
+.global-limit {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}

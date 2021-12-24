@@ -27,8 +27,28 @@ button {
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 2px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $backgroundThird; /* color of the scroll thumb */
+  border-radius: 8px; /* roundness of the scroll thumb */
+  border: 3px solid none; /* creates padding around scroll thumb */
+}
+

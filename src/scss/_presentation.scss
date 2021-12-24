@@ -1,0 +1,70 @@
+.presentation {
+  .presentation__initial {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+  }
+  header {
+    max-width: 319px;
+    p {
+      font-size: 1.3rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 2rem;
+
+      span {
+        color: $backgroundThird;
+      }
+    }
+
+    .btn__signup {
+      margin: 2.5rem 0;
+      a {
+        position: relative;
+        padding: 1rem;
+        overflow: hidden;
+        max-width: 212px;
+
+        @include flexCenter;
+        @include buttonAnimation;
+      }
+    }
+  }
+
+  .presentation__image {
+    width: 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .presentation__initial {
+      margin-top: 3rem;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    header {
+      max-width: 256px;
+      p {
+        font-size: 1.1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .btn__signup {
+        @include flexJustifyCenter;
+      }
+    }
+  }
+
+  @media (max-width: 475px) {
+    .presentation__image {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.services {
+  margin-top: 6rem;
+
+  .services__info {
+    @include flexBetween;
+
+    .services__info--text {
+      max-width: 518px;
+      h2 {
+        font-size: 1.8rem;
+        max-width: 267px;
+        line-height: 32px;
+      }
+      p {
+        line-height: 24px;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .services__info--img {
+      width: 40%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .services__info {
+      text-align: center;
+      flex-direction: column;
+      .services__info--text {
+        @include flexItemsCenter;
+        flex-direction: column;
+      }
+      .services__info--img {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 475px) {
+    .services__info {
+      .services__info--img {
+        width: 80%;
+      }
+    }
+  }
+}

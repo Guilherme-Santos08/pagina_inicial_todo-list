@@ -1,0 +1,29 @@
+.developer {
+  margin: 4rem 0 2rem;
+  background-color: $backgroundSecondary;
+  padding: 1rem 0;
+
+  > div {
+    text-align: center;
+
+    h2 {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 50px;
+      border-radius: 999px;
+      margin-bottom: 0.2rem;
+    }
+    h3 {
+      font-size: 0.8rem;
+      color: rgb(175, 170, 170);
+    }
+
+    p {
+      margin: 1rem auto;
+      max-width: 368px;
+      font-size: 0.9rem;
+    }
+  }
+}

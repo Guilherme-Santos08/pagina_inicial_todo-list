@@ -9,6 +9,15 @@ html {
   scroll-behavior: smooth; // preciso configurar o scroll
 }
 
+h2 {
+  font-size: 1.8rem;
+  line-height: 32px;
+
+  span {
+    color: $backgroundThird
+  }
+}
+
 li {
   list-style: none;
 }
@@ -52,3 +61,9 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid none; /* creates padding around scroll thumb */
 }
 
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}

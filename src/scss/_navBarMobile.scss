@@ -7,7 +7,7 @@
   height: 100vh;
   display: none;
   background-color: $background;
-
+  transition: display .2s ease;
   > div {
     padding: 0 20px;
 

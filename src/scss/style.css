@@ -749,6 +749,7 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
 
 .about .about__info {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,10 +1042,13 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
 
 .developer > div {
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .developer > div h2 {
-  margin: 1rem 0;
+  font-size: 1.6rem;
+  margin: 1.75rem 0;
 }
 
 .developer > div img {
@@ -1054,7 +1058,7 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
 }
 
 .developer > div h3 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: #afaaaa;
 }
 
@@ -1062,6 +1066,7 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
   margin: 1rem auto;
   max-width: 368px;
   font-size: 0.9rem;
+  line-height: 26px;
 }
 
 footer {

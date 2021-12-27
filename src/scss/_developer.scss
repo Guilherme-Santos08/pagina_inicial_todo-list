@@ -4,30 +4,46 @@
   padding: 1rem 0;
 
   > div {
-    text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: start;
+    @include flexBetween;
 
-    h2 {
-      font-size: 1.6rem;
-      margin: 1.75rem 0;
+    .developer__wrap--text {
+      h2 {
+        margin: 1.75rem 0;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: rgb(175, 170, 170);
+      }
+
+      p {
+        margin: 0.75rem auto;
+        max-width: 368px;
+        font-size: 0.9rem;
+        line-height: 26px;
+      }
     }
 
-    img {
-      max-width: 50px;
-      border-radius: 999px;
-      margin-bottom: 0.2rem;
+    .developer__wrap--img {
+      width: 45%;
     }
-    h3 {
-      font-size: 1.2rem;
-      color: rgb(175, 170, 170);
-    }
+  }
 
-    p {
-      margin: 1rem auto;
-      max-width: 368px;
-      font-size: 0.9rem;
-      line-height: 26px;
+  @media (max-width: 1000px) {
+    > div {
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 646px) {
+    > div {
+      .developer__wrap--img {
+        width: 70%;
+      }
     }
   }
 }

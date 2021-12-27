@@ -62,6 +62,13 @@ body.is-open {
   overflow: hidden;
 }
 
+.presentation,
+.about,
+.services,
+.developer {
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 2px;
   /* width of the entire scrollbar */
@@ -563,7 +570,7 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 7.5rem;
+  min-height: 75vh;
 }
 
 .presentation header {
@@ -715,6 +722,7 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    margin-bottom: 5.75rem;
   }
   .presentation header {
     max-width: 256px;
@@ -744,7 +752,6 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
 .about {
   padding: 1rem 0;
   background-color: #1f1f1f;
-  margin-top: 6rem;
 }
 
 .about .about__info {
@@ -1041,32 +1048,54 @@ header nav .nav__right .ul__signup a span:nth-child(4) {
 }
 
 .developer > div {
-  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.developer > div h2 {
-  font-size: 1.6rem;
+.developer > div .developer__wrap--text h2 {
   margin: 1.75rem 0;
 }
 
-.developer > div img {
-  max-width: 50px;
-  border-radius: 999px;
-  margin-bottom: 0.2rem;
-}
-
-.developer > div h3 {
+.developer > div .developer__wrap--text h3 {
   font-size: 1.2rem;
   color: #afaaaa;
 }
 
-.developer > div p {
-  margin: 1rem auto;
+.developer > div .developer__wrap--text p {
+  margin: 0.75rem auto;
   max-width: 368px;
   font-size: 0.9rem;
   line-height: 26px;
+}
+
+.developer > div .developer__wrap--img {
+  width: 45%;
+}
+
+@media (max-width: 1000px) {
+  .developer > div {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 646px) {
+  .developer > div .developer__wrap--img {
+    width: 70%;
+  }
 }
 
 footer {
@@ -1104,5 +1133,14 @@ footer > div ul {
 
 footer > div ul li + li {
   margin-left: 2rem;
+}
+
+footer > div ul a {
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+footer > div ul a:hover {
+  color: #1779ff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       data-auto-replace-svg
@@ -80,7 +82,9 @@
         <ul class="mobile-nav__menu">
           <li><a class="mobile-nav__menu--a" href="#about">Sobre</a></li>
           <li><a class="mobile-nav__menu--a" href="#services">Serviço</a></li>
-          <li><a class="mobile-nav__menu--a" href="#developer">Desenvolvedor</a></li>
+          <li>
+            <a class="mobile-nav__menu--a" href="#developer">Desenvolvedor</a>
+          </li>
         </ul>
 
         <div class="mobile-nav__buttons">
@@ -105,13 +109,13 @@
       <section class="presentation">
         <div class="global-limit global-padding presentation__initial">
           <header>
-            <p>Lista de tarefas</p>
-            <h1>
+            <p data-aos="zoom-in-down">Lista de tarefas</p>
+            <h1 data-aos="zoom-in-down">
               Quem sabe um dia, isso se torne a melhor
               <span>Lista de tarefas </span>
             </h1>
 
-            <div class="btn__signup">
+            <div class="btn__signup" data-aos="zoom-in-down">
               <a href="https://app-lista-de-tarefa.vercel.app/">
                 <span></span>
                 <span></span>
@@ -122,7 +126,7 @@
             </div>
           </header>
 
-          <div class="presentation__image">
+          <div class="presentation__image" data-aos="fade-left">
             <img
               src="./src/assets/undraw_to_do_list_re_9nt7.svg"
               alt="Ilustração de uma lista de tarefas"
@@ -133,9 +137,11 @@
 
       <section class="about" id="about">
         <div class="global-limit global-padding about__info">
-          <div class="about__info--text">
-            <h2>Um pouquinho da <span>Lista de Tarefas</span></h2>
-            <p>
+          <div class="about__info--text" data-aos="fade-right">
+            <h2 data-aos="zoom-in-right">
+              Um pouquinho da <span>Lista de Tarefas</span>
+            </h2>
+            <p data-aos="zoom-in-left">
               O desenvolvimento dessa aplicação começou com afins de praticar
               minhas habilidades como desenvolvedor Web. A cada atualização o
               projeto foi tomando forma e crescendo, hoje eu tento melhora-lo
@@ -144,7 +150,7 @@
               e com uma boa usabilidade.
             </p>
           </div>
-          <div class="about__info--video">
+          <div class="about__info--video" data-aos="fade-left">
             <span></span>
             <span></span>
             <span></span>
@@ -158,16 +164,18 @@
 
       <section class="services" id="services">
         <div class="global-limit global-padding services__info">
-          <div class="services__info--text">
-            <h2>Essa<span> lista de tarefas</span> é paga?</h2>
-            <p>
+          <div class="services__info--text" data-aos="fade-right">
+            <h2 data-aos="zoom-in-right">
+              Essa<span> lista de tarefas</span> é paga?
+            </h2>
+            <p data-aos="zoom-in-left">
               Até o momento essa aplicação não é paga, pois por enquanto nenhum
               valor saiu do meu bolso para desenvolver essa aplicação, todos
               recursos usados nessa aplicação atualmente fora usadados de forma
               gratuita
             </p>
           </div>
-          <div class="services__info--img">
+          <div class="services__info--img" data-aos="fade-left">
             <img
               src="./src/assets/undraw_transfer_money_rywa.svg"
               alt="Imagem de transferência de dinheiro"
@@ -177,18 +185,19 @@
       </section>
 
       <section class="developer" id="developer">
-        <div class="global-limit global-padding">
-          <h2>Desenvolvedor</h2>
-          <img
-            src="./src/assets/201810445_235179614746614_4817475793006023225_n.jpg"
-            alt="Foto do desenvolvedor"
-          />
-          <h3>Guilherme Ribeiro</h3>
-          <p>
-            “Tudo começou com um projeto para melhorar minhas habilidades com
-            ReactJS, e aqui estamos haahhaah, espero que gostem da minha
-            aplicação “
-          </p>
+        <div class="global-limit global-padding developer__wrap">
+          <div class="developer__wrap--text">
+            <h2 data-aos="zoom-in-left">Desenvolvedor</h2>
+            <h3 data-aos="zoom-in-down">Guilherme Ribeiro</h3>
+            <p data-aos="zoom-in-right">
+              “Tudo começou com um projeto para melhorar minhas habilidades com
+              ReactJS, e aqui estamos haahhaah, espero que gostem da minha
+              aplicação “
+            </p>
+          </div>
+          <div class="developer__wrap--img" data-aos="fade-right">
+            <img src="./src/assets/Coding-rafiki.svg" alt="Ilustração de um menino programando">
+          </div>
         </div>
       </section>
     </main>
@@ -217,5 +226,12 @@
     </footer>
 
     <script src="./src/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
   </body>
 </html>

@@ -7,13 +7,14 @@ function handleButtonMobile() {
   navBarMobile.classList.toggle("is-open");
   const containClass = navBarMobile.classList.contains("is-open");
   if (containClass) {
-    body.classList.toggle("is-open");
+    body.classList.add("is-open");
+  } else {
+    body.classList.remove("is-open");
   }
 }
 
 function handleCloseMenuClick() {
   closeMenu.forEach(close => {
-    console.log(close)
     close.addEventListener("click", () => {
       navBarMobile.classList.remove("is-open");
       body.classList.remove("is-open");

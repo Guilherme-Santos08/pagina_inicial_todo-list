@@ -14,7 +14,7 @@ h2 {
   line-height: 32px;
 
   span {
-    color: $backgroundThird
+    color: $backgroundThird;
   }
 }
 
@@ -51,6 +51,13 @@ body {
   }
 }
 
+.presentation,
+.about,
+.services,
+.developer {
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 2px; /* width of the entire scrollbar */
 }
@@ -64,7 +71,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 8px; /* roundness of the scroll thumb */
   border: 3px solid none; /* creates padding around scroll thumb */
 }
-
 
 @media (max-width: 1000px) {
   h2 {
